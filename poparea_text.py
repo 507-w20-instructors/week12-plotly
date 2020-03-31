@@ -11,8 +11,8 @@ scatter_data = go.Scatter(
     y=population,
     text=cities, 
     marker={'symbol':'square', 'size':30, 'color': 'green'},
-    mode='markers'
-)
+    mode='markers+text', 
+    textposition="top center")
 basic_layout = go.Layout(title="US Cities Area vs Population")
 fig = go.Figure(data=scatter_data, layout=basic_layout)
 
