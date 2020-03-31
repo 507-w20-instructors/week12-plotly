@@ -15,4 +15,4 @@ scatter_data = go.Scatter(
 basic_layout = go.Layout(title="US Cities Area vs Population")
 fig = go.Figure(data=scatter_data, layout=basic_layout)
 
-fig.show()
+fig.write_html("poparea.html", auto_open=True)
